@@ -1,0 +1,4 @@
+- `npm install`
+- `npx cypress open`
+- **pick Chrome v91+** browser to get around https://github.com/cypress-io/cypress/issues/6207
+- click the spec

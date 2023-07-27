@@ -1,0 +1,23 @@
+<body>
+  <form action="/action_page.php">
+    <label for="fname">First name:</label>
+    <input type="text" id="fname" name="fname" autofocus><br><br>
+    <label for="lname">Last name:</label>
+    <input type="text" id="lname" name="lname"><br><br>
+    <input type="submit">
+  </form>
+
+  <div id="parent">
+    <div id="child">Child div</div>
+  </div>
+
+  <button id="work">Click</button>
+
+  <script>
+    document.getElementById('work').addEventListener('click', () => {
+      document.getElementById('parent').innerHTML = `
+        <div id="child">Updated Child div</div>
+      `
+    })
+  </script>
+</body>
