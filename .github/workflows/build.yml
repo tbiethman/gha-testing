@@ -1,6 +1,6 @@
 name: test
 # This workflow represents a set of basic End-to-End tests
-on: [push, pull_request]
+on: [push, pull_request, merge_group]
 
 jobs:
   environment: 
