@@ -1,0 +1,14 @@
+machine:
+  node:
+    version: 8
+
+dependencies:
+  override:
+    - npm install
+  cache_directories:
+    - node_modules
+
+test:
+  override:
+    - npm install cypress
+    - node run.js
